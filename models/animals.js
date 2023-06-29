@@ -1,4 +1,4 @@
-const mongoose = require('./connection');
+const mongoose = require('../models/connection');
 
 const animalSchema = new mongoose.Schema({
     species: String,
@@ -7,6 +7,6 @@ const animalSchema = new mongoose.Schema({
     lifeExpectancy: Number
 });
 
-const Animals = mongoose.model('animal', animalSchema);
+const Animal = mongoose.model('Animal', animalSchema);
 
-module.exports = Animals;
+module.exports = Animal;
